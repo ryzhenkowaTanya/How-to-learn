@@ -80,6 +80,12 @@
   top: 64px;
 }
 
+.description{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 100px;
+}
 
 .two-column{
   display: flex;
