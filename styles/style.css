@@ -9,19 +9,6 @@
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
-.reset_margin{
-  margin: 0 0 0 0;
-}
-
-.reset_padding{
-  padding: 0 0 0 0;
-}
-
-.reset_font{
-  font-size: 0;
-  font-weight: 0;
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -29,35 +16,33 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
-  justify-content: end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   font-size: 0;
-  /* выше установили ограничения для секции */
+  z-index: -1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-
-
-/* и элемента с модификатором вида ключ-значение */
-
-.header__logo_place_header{
-    position: absolute;
-    width: 183px;
-    height: 32px;
-    top: 30px;
-    left: 64px;
-}
-
-.header__title{
+.logo_place_header {
+  width: 183px;
+  height: 32px;
   position: absolute;
+  top: 30px;
+  left: 64px;
+  margin-top: 0;
+}
+
+.header__title {
   font-size: 102px;
   width: 730px;
-  left: 64px;
+  margin-left: 64px;
   line-height: 96px;
-  font-weight: 600;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 3;
 }
 
-.header__subtitle{
+.header__subtitle {
   position: absolute;
   width: 388px;
   bottom: 30px;
@@ -65,14 +50,17 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
   z-index: 2;
 }
 
-.header__link{
+.header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
-.header__image_place_header{
+.header__main-illustration {
   position: absolute;
   height: 608px;
   min-width: 765px;
@@ -88,118 +76,113 @@
   background-color: #2f80ed;
   right: 0;
   top: 64px;
+  z-index: 0;
 }
 
-.description{
+.description {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.description__two-column{
+.two-columns {
   display: flex;
   position: relative;
   justify-content: space-between;
   margin-top: 100px;
-  margin-bottom: 100px;
   min-width: 784px;
   width: 80%;
 }
 
-.two-column__main-text{
+.two-columns__main-text {
   min-width: 784px;
   width: 80%;
 }
 
-.two-column__brief{
+.two-columns__brief {
   color: #2f80ed;
   width: 174px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
+  margin: 0;
 }
 
-.two-column__paragraph{
+.two-columns__paragraph {
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
   margin-bottom: 30px;
-
+  margin-top: 0;
 }
 
-.two-column__span-accent{
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
   font-size: 24px;
-  font-weight: 600;
-
+  font-weight: 700;
 }
 
-.two-column__paragraph-last-child{
-font-weight: 500;
-  font-size: 24px;
-  margin-top: 30px;
+.digits {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.digits__section_title{
+.section_title {
   width: 60%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
+  margin: 100px auto 0;
 }
 
-.digits__section_subtitle {
+.section_subtitle {
   width: 60%;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 20px;
   font-weight: 400;
   line-height: 34px;
   font-size: 24px;
+  margin: 20px auto 0;
 }
 
-.table{
+.table {
   width: 1100px;
-  margin: auto;
-
-}
-
-.table__list{
   display: flex;
   flex-wrap: wrap;
   position: relative;
   list-style-type: none;
   justify-content: space-between;
-  top: 60px;
-  width: 100%;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  padding-left: 0;
 }
 
-.table__cell{
+.table__cell {
   width: 250px;
-  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
-.table__heading{
+.table__heading {
   margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.table__text{
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
-.table__signature{
- margin: auto;
-}
-
-.feynman{
+.feynman {
   background-color: #f2f2f2;
   min-height: 790px;
   display: flex;
@@ -208,18 +191,18 @@ font-weight: 500;
   align-items: center;
   padding-top: 100px;
 }
-.feynman__title{
+
+.feynman__title {
   width: 648px;
   z-index: 1;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: 600;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
-.feynman__subtitle{
+.feynman__subtitle {
   z-index: 1;
   width: 60%;
   text-align: center;
@@ -231,7 +214,7 @@ font-weight: 500;
   font-size: 36px;
 }
 
-.feynman__photo{
+.feynman__photo {
   width: 867px;
   height: 637px;
   position: absolute;
@@ -239,17 +222,18 @@ font-weight: 500;
   bottom: 0;
 }
 
-.feynman__link{
+.feynman__link {
   position: absolute;
   right: 48px;
-  top:50%;
+  top: 50%;
   line-height: 51px;
   font-size: 36px;
   font-weight: 400;
   color: #2f80ed;
+  text-decoration: none;
 }
 
-.kaufman{
+.kaufman {
   background-color: #1f1f1f;
   background-size: 877px 877px;
   background-repeat: no-repeat;
@@ -262,124 +246,125 @@ font-weight: 500;
   padding-top: 90px;
 }
 
-.kaufman__section-title{
- width: 60%;
+.section-title__theme_dark {
+  width: 60%;
   text-align: center;
-  margin-left: auto;
- margin-right: auto;
+  margin: 0 auto;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffff;
 }
 
-.kaufman__section-subtitle{
-  margin-top: 20px;
+.section-subtitle__theme_dark {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 0;
   color: #ffff;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
 }
 
-.table__list_theme_dark{
+.table__theme_dark {
   background-size: 877px 877px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   list-style-type: none;
   justify-content: space-between;
-  padding-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
-.table__heading_theme_dark{
+.table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.table__text_theme_dark{
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
   margin: 0 0 0 0;
 }
 
-.kaufman__triangle{
+.kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
-  background-repeat: repeat-x;
+  background-size: contain;
   position: absolute;
   width: 877px;
   height: 877px;
   right: -210px;
+  top: 0;
 }
 
-.footer{
+.footer {
   background-color: #1f1f1f;
   min-height: 350px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: 0;
+  display: flex;
 }
 
-.flex_row{
+.footer__columns {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  flex-direction: row;
-  padding-top: 60px;
-  margin: auto;
-  padding-bottom: 40px;
+  margin: 0 auto;
   width: 90%;
 }
 
-.footer__column{
-
-}
-
-.footer__column_content_copyright{
+.footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo__place_footer{
+.logo__place_footer {
   width: 183px;
   height: 35px;
 }
 
-.footer__author{
-  position: absolute;
+.footer__author {
   color: #ffff;
-  bottom: 18px;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
-.footer__column_links{
-  display: flex;
-  flex-direction: column;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.footer__column_heading {
+.footer__column-heading {
   color: #ffff;
-  margin-bottom: 20px;
+  margin-top: 0;
   line-height: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
-.footer__column_link{
+.footer__column-links {
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 0;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.footer__column-link {
   color: #ffff;
   text-decoration: none;
   line-height: 30px;
@@ -387,15 +372,11 @@ font-weight: 500;
   font-weight: 400;
 }
 
-.footer__column_content_social{
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__social_icon{
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
+
 
 
