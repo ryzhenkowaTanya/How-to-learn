@@ -19,7 +19,6 @@
   flex-direction: column;
   justify-content: center;
   font-size: 0;
-  z-index: -1;
 }
 
 .logo_place_header {
@@ -101,7 +100,7 @@
 
 .two-columns__brief {
   color: #2f80ed;
-  width: 174px;
+  width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -132,7 +131,7 @@
   justify-content: center;
 }
 
-.section_title {
+.section-title {
   width: 60%;
   text-align: center;
   line-height: 1.15;
@@ -141,7 +140,7 @@
   margin: 100px auto 0;
 }
 
-.section_subtitle {
+.section-subtitle {
   width: 60%;
   text-align: center;
   font-weight: 400;
@@ -194,7 +193,7 @@
 
 .feynman__title {
   width: 648px;
-  z-index: 1;
+  z-index: 3;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -206,9 +205,7 @@
   z-index: 1;
   width: 60%;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 70px;
+  margin: 70px auto 0;
   font-weight: 400;
   line-height: 51px;
   font-size: 36px;
@@ -231,6 +228,7 @@
   font-weight: 400;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 2;
 }
 
 .kaufman {
@@ -246,7 +244,7 @@
   padding-top: 90px;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   width: 60%;
   text-align: center;
   margin: 0 auto;
@@ -254,18 +252,20 @@
   font-size: 60px;
   font-weight: 700;
   color: #ffff;
+  z-index: 1;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   text-align: center;
   margin: 20px auto 0;
   color: #ffff;
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
+  z-index: 2;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   background-size: 877px 877px;
   display: flex;
   flex-wrap: wrap;
@@ -279,7 +279,8 @@
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 0;
 }
 
 .table__heading_theme_dark {
@@ -314,6 +315,7 @@
   padding-bottom: 40px;
   margin: 0;
   display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -331,7 +333,7 @@
   justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   width: 183px;
   height: 35px;
 }
