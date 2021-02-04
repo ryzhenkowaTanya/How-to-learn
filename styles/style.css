@@ -76,6 +76,7 @@
   right: 0;
   top: 64px;
   z-index: 0;
+  
 }
 
 .description {
@@ -189,7 +190,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .feynman__title {
@@ -383,7 +384,6 @@
 
 .techniques{
   width: 80%;
-  border: red 1px solid;
   margin: auto;
   padding-top: 100px;
 }
@@ -396,28 +396,18 @@
   margin: auto;
   padding-left: 0;
   width: 920px;
-  /*justify-content: left;*/
-  border: red 1px solid;
   padding-right: 0;
-
-
-
 }
 
 .item{
   width: 240px;
   margin-right: 100px;
   margin-top: 60px;
-  /*padding-top: 60px;*/
-
-
 }
 
 .item:nth-of-type(3n){
   margin-right: 0;
 }
-
-
 
 .cards__image{
   width: 160px;
@@ -426,7 +416,6 @@
   margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 43px;
-  border: red 1px solid;
 }
 
 .cards__title{
@@ -434,7 +423,6 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  border: red 1px solid;
   margin-bottom: 16px;
 }
 
@@ -443,7 +431,6 @@
   font-weight: 400;
   line-height: 23px;
   text-align: center;
-  border: red 1px solid;
 }
 
 .section-title__techniques{
@@ -452,21 +439,109 @@
 
 .video{
   padding-top: 100px;
+  position: relative;
+}
+
+.section-title__video{
+margin-top: 0;
+}
+
+.video__iframes{
+  margin-top: 50px;
+  height: 316px;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .video__iframe{
-  margin-left: auto;
+  width: 515px;
+  height: 316px;
   margin-top: 50px;
-  margin-right: auto ;
-  width: 1050px;
+}
+
+.video__iframe:nth-of-type(1){
+  margin-right: 20px;
 }
 
 .oakley{
   display: flex;
   justify-content: center;
-  position: relative;
-  border: red 1px solid;
   padding-top: 160px;
   background-color: #f2f2f2;
+}
+
+.khan{
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.khan__author{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.khan__title{
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.khan__quote{
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 36px;
+}
+
+.khan__quote-author{
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.khan__quote-author-subline{
+  margin-top: 0;
+  margin-bottom: 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.khan__book-container{
+  position: relative;
+}
+
+.khan__book-pic{
+  width: 608px;
+  height: 620px;
+}
+
+.khan__buy-link{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #2f80ed;
+  margin-left: 48px;
+  position: absolute;
+}
+
+.demo__item_character_starman:hover{
 }
 

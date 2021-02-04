@@ -16,11 +16,9 @@
     <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
       <a class="header__link" href="#">Узнать &rarr;</a></p>
     <img src="images/header-image.png" alt="Картинка с ребенком" class="header__main-illustration">
-    <div class="header__square-pic"></div>
+    <div class="header__square-pic rotation"></div>
   </header>
-
   <main class="content">
-
     <section class="description">
       <div class="two-columns">
         <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
@@ -41,8 +39,6 @@
         </div>
       </div>
     </section>
-
-
     <section class="techniques">
       <h2 class="section-title section-title__techniques">Техники обучения</h2>
         <p class="section-subtitle section-subtitle__techniques">Пять практик от барбары Оаксли</p>
@@ -74,18 +70,15 @@
 </li>
 </ul>
     </section>
-
-
     <section class="video">
       <h2 class="section-title section-title__video">Видео на TED</h2>
       <p class="section-subtitle section-subtitle__video">Для тех, кто любит прокрастинировать</p>
-      <div class="video__iframe">
-        <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video__iframes">
+        <iframe  src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
+        <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
       </div>
     </section>
-
-        <section class="oakley">
+    <section class="oakley">
           <div class="two-columns two-columns__oakley">
             <h2 class="two-columns__brief">История Барбары Оакли.</h2>
             <div class="two-columns__main-text">
@@ -93,16 +86,12 @@
             </div>
           </div>
         </section>
-
-
     <section class="feynman">
       <h2 class="feynman__title">Метод Фейнмана</h2>
       <p class="feynman__subtitle">Выучить и не забыть.</p>
       <a class="feynman__link" href="#">Подробнее&rarr;</a>
       <img class="feynman__photo" alt="Фотография Фейнмана" src="images/feynman.png">
     </section>
-
-
     <section class="digits">
       <h2 class="section-title">Цифры и факты</h2>
       <p class="section-subtitle">Про учебу и мозг</p>
@@ -143,9 +132,20 @@
         </li>
       </ul>
     </section>
-
-
-      <section class="kaufman">
+    <section class="khan">
+      <div class="khan__container">
+        <p class="khan__author">Салман Хан</p>
+        <h2 class="khan__title">Весь мир — школа</h2>
+        <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+        <p class="khan__quote-author">Джордж Лукас</p>
+        <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+        <div class="khan__book-container">
+          <img class="khan__book-pic" src="images/khan-book.jpg" alt="Картинка с обложкой книги">
+          <a class="khan__buy-link">Купить книгу &rarr;</a>
+        </div>
+      </div>
+    </section>
+    <section class="kaufman">
       <div class="kaufman__triangle"></div>
       <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
       <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
@@ -193,12 +193,8 @@
         </li>
       </ul>
     </section>
-
-
   </main>
-
   <footer class="footer">
-
     <div class="footer__columns">
       <div class="footer__column footer__column_content_copyright">
         <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Логотип компании">
@@ -212,8 +208,6 @@
           <li><a href="#" class="footer__column-link">Наставники</a></li>
         </ul>
       </nav>
-
-
       <nav class="footer__column footer__column_content_social">
         <h2 class="footer__column-heading">Соцсети</h2>
         <ul class="footer__column-links">
@@ -222,9 +216,10 @@
           <li><a href="#" class="footer__column-link"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="Иконка Инстаграм ">instagram</a></li>
         </ul>
       </nav>
-
     </div>
   </footer>
 </div>
 </body>
 </html>
+
+
