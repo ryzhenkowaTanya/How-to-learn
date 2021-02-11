@@ -419,6 +419,7 @@ width: 60%;
   color: #2f80ed;
   margin-left: 48px;
   position: absolute;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -597,4 +598,12 @@ width: 60%;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.link:hover{
+  -moz-transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
+  -ms-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  opacity: 0.5;
 }
