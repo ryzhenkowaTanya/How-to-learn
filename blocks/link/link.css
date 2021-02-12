@@ -1,0 +1,7 @@
+.link:hover{
+  -moz-transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
+  -ms-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  opacity: 0.5;
+}
