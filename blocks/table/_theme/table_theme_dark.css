@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  list-style-type: none;
+
   justify-content: space-between;
   margin-bottom: 90px;
 }

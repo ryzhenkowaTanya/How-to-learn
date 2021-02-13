@@ -1,8 +1,8 @@
 .video__iframe{
   width: 515px;
   height: 316px;
-  margin-top: 50px;
   border: 0;
+  transform: translate(0,50px);
 }
 
 .video__iframe:nth-of-type(1){
