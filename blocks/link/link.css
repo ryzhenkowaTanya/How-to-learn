@@ -2,6 +2,6 @@
   -moz-transition: opacity 0.1s ease-in;
   -webkit-transition: opacity 0.1s ease-in;
   -ms-transition: opacity 0.1s ease-in;
-  transition: opacity 0.1s ease-in;
+  transition: 0.2s ease-in-out;
   opacity: 0.5;
 }
