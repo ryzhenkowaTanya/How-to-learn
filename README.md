@@ -11,3 +11,5 @@ HTML5, CSS3
             alt="Правильный CSS!" />
     </a>
 </p>
+
+https://ryzhenkowatanya.github.io/how-to-learn/
